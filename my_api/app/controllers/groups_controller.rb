@@ -10,8 +10,13 @@ class GroupsController < ApplicationController
 
   # GET /groups/1
   def show
-    render json: @group
+    @group = Group.find(params[:id])
+  
+    if stale?(last_modified: @group.updated_at)
+      render json: @group
+    end
   end
+  
 
   # POST /groups
   def create
@@ -35,12 +40,13 @@ class GroupsController < ApplicationController
 
   # DELETE /groups/1
   def destroy
-    @group.destroy!
+    group.destroy!
   end
 
   private
     # Use callbacks to share common setup or constraints between actions.
-    def set_group
+    # 
+    def group
       @group = Group.find(params[:id])
     end
 
