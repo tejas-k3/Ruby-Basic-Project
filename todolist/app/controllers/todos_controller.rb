@@ -1,7 +1,12 @@
 class TodosController < ApplicationController
     # before_action :todo, only: [:show, :edit, :update, :destroy]
     before_action :todo, only: [:show, :update]
-  
+    STATUS_MAPPING = {
+    "created" => 0,
+    "in_progress" => 1,
+    "done" => 2
+    }.freeze
+
     def index
         @todos = Todo.all
         render json: @todos
@@ -33,6 +38,24 @@ class TodosController < ApplicationController
         head :no_content
     end
 
+    def get_by_state(status)
+        db_value = TodosController::STATUS_MAPPING[status]
+        @todos = Todo.where(state: STATUS_MAPPING[status])
+        render json: @todos
+    end
+
+    def created
+        get_by_state("created")
+    end
+    
+    def inprogress
+        get_by_state("in_progress")
+    end
+    
+    def done
+        get_by_state("done")
+    end
+ 
     private
   
     def todo

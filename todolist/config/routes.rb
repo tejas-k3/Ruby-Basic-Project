@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
   resources :todos do
     collection do
-      get :pending # Get all todos marked as pending
+      get :created # Get all todos marked as created
+      get :inprogress # Get all todos marked as in progress
       get :done # Get all todos marked as done
       # More can be added to play around with timestamps!
     end
