@@ -9,11 +9,11 @@ class TodosController < ApplicationController
 
     def index
         @todos = Todo.all
-        render json: @todos
+        render json: todos_json
     end
     
     def show
-      render json: @todo
+      render json: todos_json
     end
   
     def create
@@ -27,21 +27,26 @@ class TodosController < ApplicationController
   
     def update
       if @todo.update(todo_params)
-        render json: @todo
+        render json: @todo, status: :created
       else
         render json: @todo.errors, status: :unprocessable_entity
       end
     end
   
     def destroy
+      @todo = todo
+      if @todo
         @todo.destroy
         head :no_content
+      else
+        render json: { error: 'Todo not found' }, status: :not_found
+      end
     end
-
+    
     def get_by_state(status)
         db_value = TodosController::STATUS_MAPPING[status]
         @todos = Todo.where(state: STATUS_MAPPING[status])
-        render json: @todos
+        render json: todos_json
     end
 
     def created
@@ -63,6 +68,11 @@ class TodosController < ApplicationController
     end
   
     def todo_params
-      params.require(:todo).permit(:name, :description, :state)
+      params.require(:todo).permit(:name, :description, :state, :image)
     end
+
+    def todos_json
+      @todos.map { |todo| todo.as_json.merge(image_url: todo.image.attached? ? url_for(todo.image) : nil) }
+    end
+    
 end
