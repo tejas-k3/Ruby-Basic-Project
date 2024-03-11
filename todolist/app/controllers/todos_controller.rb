@@ -42,6 +42,15 @@ class TodosController < ApplicationController
         render json: { error: 'Todo not found' }, status: :not_found
       end
     end
+
+    def status
+      @todo = todo
+      if @todo
+        render json: @todo.state
+      else
+        render json: { error: 'Todo not found' }, status: :not_found
+      end
+    end
     
     def get_by_state(status)
         db_value = TodosController::STATUS_MAPPING[status]
