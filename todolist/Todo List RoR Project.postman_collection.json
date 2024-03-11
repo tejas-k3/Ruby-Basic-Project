@@ -1,0 +1,1521 @@
+{
+	"info": {
+		"_postman_id": "dd0c0819-ead2-4f8c-bedf-9ce9b25b723c",
+		"name": "Todo List RoR Project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19433000"
+	},
+	"item": [
+		{
+			"name": "Get created todos",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en;q=0.9,en-US;q=0.8,hi;q=0.7"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Cookie",
+						"value": "csrftoken=kPsZQ5SfZGHIcUH8xEUe2x5bEbsGOi8P; _blog_session=x3kXRHKBzDEPWqh3hbm2FcPofKFchVrV5NPtjZlLiCWMfxLD2ogs91fwVPmnYZNlIn5JM5mRKYkvLjAtJLyFcK6m28im%2BNC6zgJNpEJhGnoV9Fuzp93Yx%2BgWX7mHauY%2Ftz3zQ7z%2Bboa0LIbXSZI%2FClGRPxMLoxeHAiC%2B9Q7dztXauhIqB1EA0%2B6Uwmw2Gs%2FW1FfbpQi8aO0vAsx%2BlLXUazBfVrnoSkjrjWCUIJfobPUDfZoFzOgX6WQ2cPHddxbMTt8S5C7%2BttuiJwkH8q6OBTNTy7TM--JOsbG7AVNbSMnu9p--CAAB8yOJCxgsTm%2FHJG65TA%3D%3D"
+					},
+					{
+						"key": "DNT",
+						"value": "1"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "document"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "navigate"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "none"
+					},
+					{
+						"key": "Sec-Fetch-User",
+						"value": "?1"
+					},
+					{
+						"key": "Upgrade-Insecure-Requests",
+						"value": "1"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Mobile Safari/537.36"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Chromium\";v=\"122\", \"Not(A:Brand\";v=\"24\", \"Google Chrome\";v=\"122\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?1"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Android\""
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/todos/created",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"todos",
+						"created"
+					]
+				},
+				"description": "Get Created "
+			},
+			"response": [
+				{
+					"name": "Get created todos",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "en-GB,en;q=0.9,en-US;q=0.8,hi;q=0.7"
+							},
+							{
+								"key": "Cache-Control",
+								"value": "no-cache"
+							},
+							{
+								"key": "Connection",
+								"value": "keep-alive"
+							},
+							{
+								"key": "Cookie",
+								"value": "csrftoken=kPsZQ5SfZGHIcUH8xEUe2x5bEbsGOi8P; _blog_session=x3kXRHKBzDEPWqh3hbm2FcPofKFchVrV5NPtjZlLiCWMfxLD2ogs91fwVPmnYZNlIn5JM5mRKYkvLjAtJLyFcK6m28im%2BNC6zgJNpEJhGnoV9Fuzp93Yx%2BgWX7mHauY%2Ftz3zQ7z%2Bboa0LIbXSZI%2FClGRPxMLoxeHAiC%2B9Q7dztXauhIqB1EA0%2B6Uwmw2Gs%2FW1FfbpQi8aO0vAsx%2BlLXUazBfVrnoSkjrjWCUIJfobPUDfZoFzOgX6WQ2cPHddxbMTt8S5C7%2BttuiJwkH8q6OBTNTy7TM--JOsbG7AVNbSMnu9p--CAAB8yOJCxgsTm%2FHJG65TA%3D%3D"
+							},
+							{
+								"key": "DNT",
+								"value": "1"
+							},
+							{
+								"key": "Pragma",
+								"value": "no-cache"
+							},
+							{
+								"key": "Sec-Fetch-Dest",
+								"value": "document"
+							},
+							{
+								"key": "Sec-Fetch-Mode",
+								"value": "navigate"
+							},
+							{
+								"key": "Sec-Fetch-Site",
+								"value": "none"
+							},
+							{
+								"key": "Sec-Fetch-User",
+								"value": "?1"
+							},
+							{
+								"key": "Upgrade-Insecure-Requests",
+								"value": "1"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Mobile Safari/537.36"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\"Chromium\";v=\"122\", \"Not(A:Brand\";v=\"24\", \"Google Chrome\";v=\"122\""
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?1"
+							},
+							{
+								"key": "sec-ch-ua-platform",
+								"value": "\"Android\""
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/todos/created",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"todos",
+								"created"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "x-frame-options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "x-xss-protection",
+							"value": "0"
+						},
+						{
+							"key": "x-content-type-options",
+							"value": "nosniff"
+						},
+						{
+							"key": "x-permitted-cross-domain-policies",
+							"value": "none"
+						},
+						{
+							"key": "referrer-policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "etag",
+							"value": "W/\"4e57c246dec07b0a7ed6b6429d779cf2\""
+						},
+						{
+							"key": "cache-control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "x-request-id",
+							"value": "5f1513eb-ac75-486f-b866-c467b33bf252"
+						},
+						{
+							"key": "x-runtime",
+							"value": "0.551338"
+						},
+						{
+							"key": "server-timing",
+							"value": "start_processing.action_controller;dur=0.01, sql.active_record;dur=4.38, instantiation.active_record;dur=31.70, process_action.action_controller;dur=380.97"
+						},
+						{
+							"key": "Content-Length",
+							"value": "583"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 2,\n        \"created_at\": \"2024-03-10T09:51:39.754Z\",\n        \"updated_at\": \"2024-03-10T09:51:39.754Z\",\n        \"name\": \"Write blog post\",\n        \"description\": \"Share insights on recent project\",\n        \"state\": \"created\",\n        \"image_url\": null\n    },\n    {\n        \"id\": 3,\n        \"created_at\": \"2024-03-10T14:58:30.460Z\",\n        \"updated_at\": \"2024-03-10T14:58:30.460Z\",\n        \"name\": \"Go\",\n        \"description\": \"Random Go movement\",\n        \"state\": \"created\",\n        \"image_url\": null\n    },\n    {\n        \"id\": 6,\n        \"created_at\": \"2024-03-10T18:44:40.865Z\",\n        \"updated_at\": \"2024-03-10T18:44:40.865Z\",\n        \"name\": \"\\\"NO Image upload test\\\"\",\n        \"description\": \"\\\"Image upload test for RoR API Only\\\"\",\n        \"state\": \"created\",\n        \"image_url\": null\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Get todo status",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en;q=0.9,en-US;q=0.8,hi;q=0.7"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Cookie",
+						"value": "csrftoken=kPsZQ5SfZGHIcUH8xEUe2x5bEbsGOi8P; _blog_session=x3kXRHKBzDEPWqh3hbm2FcPofKFchVrV5NPtjZlLiCWMfxLD2ogs91fwVPmnYZNlIn5JM5mRKYkvLjAtJLyFcK6m28im%2BNC6zgJNpEJhGnoV9Fuzp93Yx%2BgWX7mHauY%2Ftz3zQ7z%2Bboa0LIbXSZI%2FClGRPxMLoxeHAiC%2B9Q7dztXauhIqB1EA0%2B6Uwmw2Gs%2FW1FfbpQi8aO0vAsx%2BlLXUazBfVrnoSkjrjWCUIJfobPUDfZoFzOgX6WQ2cPHddxbMTt8S5C7%2BttuiJwkH8q6OBTNTy7TM--JOsbG7AVNbSMnu9p--CAAB8yOJCxgsTm%2FHJG65TA%3D%3D"
+					},
+					{
+						"key": "DNT",
+						"value": "1"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "document"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "navigate"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "none"
+					},
+					{
+						"key": "Sec-Fetch-User",
+						"value": "?1"
+					},
+					{
+						"key": "Upgrade-Insecure-Requests",
+						"value": "1"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Mobile Safari/537.36"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Chromium\";v=\"122\", \"Not(A:Brand\";v=\"24\", \"Google Chrome\";v=\"122\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?1"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Android\""
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/todos/1/status",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"todos",
+						"1",
+						"status"
+					]
+				},
+				"description": "Get Created "
+			},
+			"response": [
+				{
+					"name": "Get todo status",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "en-GB,en;q=0.9,en-US;q=0.8,hi;q=0.7"
+							},
+							{
+								"key": "Cache-Control",
+								"value": "no-cache"
+							},
+							{
+								"key": "Connection",
+								"value": "keep-alive"
+							},
+							{
+								"key": "Cookie",
+								"value": "csrftoken=kPsZQ5SfZGHIcUH8xEUe2x5bEbsGOi8P; _blog_session=x3kXRHKBzDEPWqh3hbm2FcPofKFchVrV5NPtjZlLiCWMfxLD2ogs91fwVPmnYZNlIn5JM5mRKYkvLjAtJLyFcK6m28im%2BNC6zgJNpEJhGnoV9Fuzp93Yx%2BgWX7mHauY%2Ftz3zQ7z%2Bboa0LIbXSZI%2FClGRPxMLoxeHAiC%2B9Q7dztXauhIqB1EA0%2B6Uwmw2Gs%2FW1FfbpQi8aO0vAsx%2BlLXUazBfVrnoSkjrjWCUIJfobPUDfZoFzOgX6WQ2cPHddxbMTt8S5C7%2BttuiJwkH8q6OBTNTy7TM--JOsbG7AVNbSMnu9p--CAAB8yOJCxgsTm%2FHJG65TA%3D%3D"
+							},
+							{
+								"key": "DNT",
+								"value": "1"
+							},
+							{
+								"key": "Pragma",
+								"value": "no-cache"
+							},
+							{
+								"key": "Sec-Fetch-Dest",
+								"value": "document"
+							},
+							{
+								"key": "Sec-Fetch-Mode",
+								"value": "navigate"
+							},
+							{
+								"key": "Sec-Fetch-Site",
+								"value": "none"
+							},
+							{
+								"key": "Sec-Fetch-User",
+								"value": "?1"
+							},
+							{
+								"key": "Upgrade-Insecure-Requests",
+								"value": "1"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Mobile Safari/537.36"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\"Chromium\";v=\"122\", \"Not(A:Brand\";v=\"24\", \"Google Chrome\";v=\"122\""
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?1"
+							},
+							{
+								"key": "sec-ch-ua-platform",
+								"value": "\"Android\""
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/todos/1/status",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"todos",
+								"1",
+								"status"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "x-frame-options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "x-xss-protection",
+							"value": "0"
+						},
+						{
+							"key": "x-content-type-options",
+							"value": "nosniff"
+						},
+						{
+							"key": "x-permitted-cross-domain-policies",
+							"value": "none"
+						},
+						{
+							"key": "referrer-policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "etag",
+							"value": "W/\"a4c3ed04a95a3da14a9d235c83d868be\""
+						},
+						{
+							"key": "cache-control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "x-request-id",
+							"value": "e7756c63-fe67-4fe0-bf7d-fe8f27b6bced"
+						},
+						{
+							"key": "x-runtime",
+							"value": "0.099052"
+						},
+						{
+							"key": "server-timing",
+							"value": "start_processing.action_controller;dur=0.01, sql.active_record;dur=1.75, instantiation.active_record;dur=1.51, process_action.action_controller;dur=10.50"
+						},
+						{
+							"key": "Content-Length",
+							"value": "4"
+						}
+					],
+					"cookie": [],
+					"body": "done"
+				}
+			]
+		},
+		{
+			"name": "Get done todos",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en;q=0.9,en-US;q=0.8,hi;q=0.7"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Cookie",
+						"value": "csrftoken=kPsZQ5SfZGHIcUH8xEUe2x5bEbsGOi8P; _blog_session=x3kXRHKBzDEPWqh3hbm2FcPofKFchVrV5NPtjZlLiCWMfxLD2ogs91fwVPmnYZNlIn5JM5mRKYkvLjAtJLyFcK6m28im%2BNC6zgJNpEJhGnoV9Fuzp93Yx%2BgWX7mHauY%2Ftz3zQ7z%2Bboa0LIbXSZI%2FClGRPxMLoxeHAiC%2B9Q7dztXauhIqB1EA0%2B6Uwmw2Gs%2FW1FfbpQi8aO0vAsx%2BlLXUazBfVrnoSkjrjWCUIJfobPUDfZoFzOgX6WQ2cPHddxbMTt8S5C7%2BttuiJwkH8q6OBTNTy7TM--JOsbG7AVNbSMnu9p--CAAB8yOJCxgsTm%2FHJG65TA%3D%3D"
+					},
+					{
+						"key": "DNT",
+						"value": "1"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "document"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "navigate"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "none"
+					},
+					{
+						"key": "Sec-Fetch-User",
+						"value": "?1"
+					},
+					{
+						"key": "Upgrade-Insecure-Requests",
+						"value": "1"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Mobile Safari/537.36"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Chromium\";v=\"122\", \"Not(A:Brand\";v=\"24\", \"Google Chrome\";v=\"122\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?1"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Android\""
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/todos/done",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"todos",
+						"done"
+					]
+				},
+				"description": "Get Created "
+			},
+			"response": [
+				{
+					"name": "Get done todos",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "en-GB,en;q=0.9,en-US;q=0.8,hi;q=0.7"
+							},
+							{
+								"key": "Cache-Control",
+								"value": "no-cache"
+							},
+							{
+								"key": "Connection",
+								"value": "keep-alive"
+							},
+							{
+								"key": "Cookie",
+								"value": "csrftoken=kPsZQ5SfZGHIcUH8xEUe2x5bEbsGOi8P; _blog_session=x3kXRHKBzDEPWqh3hbm2FcPofKFchVrV5NPtjZlLiCWMfxLD2ogs91fwVPmnYZNlIn5JM5mRKYkvLjAtJLyFcK6m28im%2BNC6zgJNpEJhGnoV9Fuzp93Yx%2BgWX7mHauY%2Ftz3zQ7z%2Bboa0LIbXSZI%2FClGRPxMLoxeHAiC%2B9Q7dztXauhIqB1EA0%2B6Uwmw2Gs%2FW1FfbpQi8aO0vAsx%2BlLXUazBfVrnoSkjrjWCUIJfobPUDfZoFzOgX6WQ2cPHddxbMTt8S5C7%2BttuiJwkH8q6OBTNTy7TM--JOsbG7AVNbSMnu9p--CAAB8yOJCxgsTm%2FHJG65TA%3D%3D"
+							},
+							{
+								"key": "DNT",
+								"value": "1"
+							},
+							{
+								"key": "Pragma",
+								"value": "no-cache"
+							},
+							{
+								"key": "Sec-Fetch-Dest",
+								"value": "document"
+							},
+							{
+								"key": "Sec-Fetch-Mode",
+								"value": "navigate"
+							},
+							{
+								"key": "Sec-Fetch-Site",
+								"value": "none"
+							},
+							{
+								"key": "Sec-Fetch-User",
+								"value": "?1"
+							},
+							{
+								"key": "Upgrade-Insecure-Requests",
+								"value": "1"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Mobile Safari/537.36"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\"Chromium\";v=\"122\", \"Not(A:Brand\";v=\"24\", \"Google Chrome\";v=\"122\""
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?1"
+							},
+							{
+								"key": "sec-ch-ua-platform",
+								"value": "\"Android\""
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/todos/done",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"todos",
+								"done"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "x-frame-options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "x-xss-protection",
+							"value": "0"
+						},
+						{
+							"key": "x-content-type-options",
+							"value": "nosniff"
+						},
+						{
+							"key": "x-permitted-cross-domain-policies",
+							"value": "none"
+						},
+						{
+							"key": "referrer-policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "etag",
+							"value": "W/\"80da3b0e44a5cf95199a2f19e583fdb8\""
+						},
+						{
+							"key": "cache-control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "x-request-id",
+							"value": "860c3e20-e55b-4399-9409-a6ea38a73191"
+						},
+						{
+							"key": "x-runtime",
+							"value": "0.045123"
+						},
+						{
+							"key": "server-timing",
+							"value": "start_processing.action_controller;dur=0.01, sql.active_record;dur=0.58, instantiation.active_record;dur=0.52, process_action.action_controller;dur=11.54"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1160"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"created_at\": \"2024-03-10T09:51:39.728Z\",\n        \"updated_at\": \"2024-03-10T15:03:38.568Z\",\n        \"name\": \"Go grocery shopping\",\n        \"description\": \"Buy fruits and vegetables\",\n        \"state\": \"done\",\n        \"image_url\": null\n    },\n    {\n        \"id\": 5,\n        \"created_at\": \"2024-03-10T18:44:00.928Z\",\n        \"updated_at\": \"2024-03-10T18:44:00.928Z\",\n        \"name\": \"NO Image upload test\",\n        \"description\": \"Image upload test for RoR API Only\",\n        \"state\": \"done\",\n        \"image_url\": null\n    },\n    {\n        \"id\": 7,\n        \"created_at\": \"2024-03-10T18:46:17.130Z\",\n        \"updated_at\": \"2024-03-10T18:46:17.130Z\",\n        \"name\": \"NO Image upload test\",\n        \"description\": \"Image upload test for RoR API Only\",\n        \"state\": \"done\",\n        \"image_url\": null\n    },\n    {\n        \"id\": 8,\n        \"created_at\": \"2024-03-10T18:47:48.323Z\",\n        \"updated_at\": \"2024-03-10T18:47:48.323Z\",\n        \"name\": \"NO Image upload test\",\n        \"description\": \"Image upload test for RoR API Only\",\n        \"state\": \"done\",\n        \"image_url\": null\n    },\n    {\n        \"id\": 9,\n        \"created_at\": \"2024-03-10T18:48:19.648Z\",\n        \"updated_at\": \"2024-03-10T18:48:20.201Z\",\n        \"name\": \"Image upload done\",\n        \"description\": \"Image upload test for RoR API Only\",\n        \"state\": \"done\",\n        \"image_url\": \"http://localhost:3000/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MSwicHVyIjoiYmxvYl9pZCJ9fQ==--8e72f7c1ccf06c4462da2703918689a24d8fee52/berserk.jpg\"\n    }\n]"
+				},
+				{
+					"name": "Get done todos Before DEL",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "en-GB,en;q=0.9,en-US;q=0.8,hi;q=0.7"
+							},
+							{
+								"key": "Cache-Control",
+								"value": "no-cache"
+							},
+							{
+								"key": "Connection",
+								"value": "keep-alive"
+							},
+							{
+								"key": "Cookie",
+								"value": "csrftoken=kPsZQ5SfZGHIcUH8xEUe2x5bEbsGOi8P; _blog_session=x3kXRHKBzDEPWqh3hbm2FcPofKFchVrV5NPtjZlLiCWMfxLD2ogs91fwVPmnYZNlIn5JM5mRKYkvLjAtJLyFcK6m28im%2BNC6zgJNpEJhGnoV9Fuzp93Yx%2BgWX7mHauY%2Ftz3zQ7z%2Bboa0LIbXSZI%2FClGRPxMLoxeHAiC%2B9Q7dztXauhIqB1EA0%2B6Uwmw2Gs%2FW1FfbpQi8aO0vAsx%2BlLXUazBfVrnoSkjrjWCUIJfobPUDfZoFzOgX6WQ2cPHddxbMTt8S5C7%2BttuiJwkH8q6OBTNTy7TM--JOsbG7AVNbSMnu9p--CAAB8yOJCxgsTm%2FHJG65TA%3D%3D"
+							},
+							{
+								"key": "DNT",
+								"value": "1"
+							},
+							{
+								"key": "Pragma",
+								"value": "no-cache"
+							},
+							{
+								"key": "Sec-Fetch-Dest",
+								"value": "document"
+							},
+							{
+								"key": "Sec-Fetch-Mode",
+								"value": "navigate"
+							},
+							{
+								"key": "Sec-Fetch-Site",
+								"value": "none"
+							},
+							{
+								"key": "Sec-Fetch-User",
+								"value": "?1"
+							},
+							{
+								"key": "Upgrade-Insecure-Requests",
+								"value": "1"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Mobile Safari/537.36"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\"Chromium\";v=\"122\", \"Not(A:Brand\";v=\"24\", \"Google Chrome\";v=\"122\""
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?1"
+							},
+							{
+								"key": "sec-ch-ua-platform",
+								"value": "\"Android\""
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/todos/done",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"todos",
+								"done"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "x-frame-options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "x-xss-protection",
+							"value": "0"
+						},
+						{
+							"key": "x-content-type-options",
+							"value": "nosniff"
+						},
+						{
+							"key": "x-permitted-cross-domain-policies",
+							"value": "none"
+						},
+						{
+							"key": "referrer-policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "etag",
+							"value": "W/\"80da3b0e44a5cf95199a2f19e583fdb8\""
+						},
+						{
+							"key": "cache-control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "x-request-id",
+							"value": "860c3e20-e55b-4399-9409-a6ea38a73191"
+						},
+						{
+							"key": "x-runtime",
+							"value": "0.045123"
+						},
+						{
+							"key": "server-timing",
+							"value": "start_processing.action_controller;dur=0.01, sql.active_record;dur=0.58, instantiation.active_record;dur=0.52, process_action.action_controller;dur=11.54"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1160"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"created_at\": \"2024-03-10T09:51:39.728Z\",\n        \"updated_at\": \"2024-03-10T15:03:38.568Z\",\n        \"name\": \"Go grocery shopping\",\n        \"description\": \"Buy fruits and vegetables\",\n        \"state\": \"done\",\n        \"image_url\": null\n    },\n    {\n        \"id\": 5,\n        \"created_at\": \"2024-03-10T18:44:00.928Z\",\n        \"updated_at\": \"2024-03-10T18:44:00.928Z\",\n        \"name\": \"NO Image upload test\",\n        \"description\": \"Image upload test for RoR API Only\",\n        \"state\": \"done\",\n        \"image_url\": null\n    },\n    {\n        \"id\": 7,\n        \"created_at\": \"2024-03-10T18:46:17.130Z\",\n        \"updated_at\": \"2024-03-10T18:46:17.130Z\",\n        \"name\": \"NO Image upload test\",\n        \"description\": \"Image upload test for RoR API Only\",\n        \"state\": \"done\",\n        \"image_url\": null\n    },\n    {\n        \"id\": 8,\n        \"created_at\": \"2024-03-10T18:47:48.323Z\",\n        \"updated_at\": \"2024-03-10T18:47:48.323Z\",\n        \"name\": \"NO Image upload test\",\n        \"description\": \"Image upload test for RoR API Only\",\n        \"state\": \"done\",\n        \"image_url\": null\n    },\n    {\n        \"id\": 9,\n        \"created_at\": \"2024-03-10T18:48:19.648Z\",\n        \"updated_at\": \"2024-03-10T18:48:20.201Z\",\n        \"name\": \"Image upload done\",\n        \"description\": \"Image upload test for RoR API Only\",\n        \"state\": \"done\",\n        \"image_url\": \"http://localhost:3000/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MSwicHVyIjoiYmxvYl9pZCJ9fQ==--8e72f7c1ccf06c4462da2703918689a24d8fee52/berserk.jpg\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Update todos",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en;q=0.9,en-US;q=0.8,hi;q=0.7"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Cookie",
+						"value": "csrftoken=kPsZQ5SfZGHIcUH8xEUe2x5bEbsGOi8P; _blog_session=x3kXRHKBzDEPWqh3hbm2FcPofKFchVrV5NPtjZlLiCWMfxLD2ogs91fwVPmnYZNlIn5JM5mRKYkvLjAtJLyFcK6m28im%2BNC6zgJNpEJhGnoV9Fuzp93Yx%2BgWX7mHauY%2Ftz3zQ7z%2Bboa0LIbXSZI%2FClGRPxMLoxeHAiC%2B9Q7dztXauhIqB1EA0%2B6Uwmw2Gs%2FW1FfbpQi8aO0vAsx%2BlLXUazBfVrnoSkjrjWCUIJfobPUDfZoFzOgX6WQ2cPHddxbMTt8S5C7%2BttuiJwkH8q6OBTNTy7TM--JOsbG7AVNbSMnu9p--CAAB8yOJCxgsTm%2FHJG65TA%3D%3D"
+					},
+					{
+						"key": "DNT",
+						"value": "1"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "document"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "navigate"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "none"
+					},
+					{
+						"key": "Sec-Fetch-User",
+						"value": "?1"
+					},
+					{
+						"key": "Upgrade-Insecure-Requests",
+						"value": "1"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Mobile Safari/537.36"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Chromium\";v=\"122\", \"Not(A:Brand\";v=\"24\", \"Google Chrome\";v=\"122\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?1"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Android\""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"state\":\"done\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/todos/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"todos",
+						"1"
+					]
+				},
+				"description": "Get Created "
+			},
+			"response": [
+				{
+					"name": "Update todos",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "en-GB,en;q=0.9,en-US;q=0.8,hi;q=0.7"
+							},
+							{
+								"key": "Cache-Control",
+								"value": "no-cache"
+							},
+							{
+								"key": "Connection",
+								"value": "keep-alive"
+							},
+							{
+								"key": "Cookie",
+								"value": "csrftoken=kPsZQ5SfZGHIcUH8xEUe2x5bEbsGOi8P; _blog_session=x3kXRHKBzDEPWqh3hbm2FcPofKFchVrV5NPtjZlLiCWMfxLD2ogs91fwVPmnYZNlIn5JM5mRKYkvLjAtJLyFcK6m28im%2BNC6zgJNpEJhGnoV9Fuzp93Yx%2BgWX7mHauY%2Ftz3zQ7z%2Bboa0LIbXSZI%2FClGRPxMLoxeHAiC%2B9Q7dztXauhIqB1EA0%2B6Uwmw2Gs%2FW1FfbpQi8aO0vAsx%2BlLXUazBfVrnoSkjrjWCUIJfobPUDfZoFzOgX6WQ2cPHddxbMTt8S5C7%2BttuiJwkH8q6OBTNTy7TM--JOsbG7AVNbSMnu9p--CAAB8yOJCxgsTm%2FHJG65TA%3D%3D"
+							},
+							{
+								"key": "DNT",
+								"value": "1"
+							},
+							{
+								"key": "Pragma",
+								"value": "no-cache"
+							},
+							{
+								"key": "Sec-Fetch-Dest",
+								"value": "document"
+							},
+							{
+								"key": "Sec-Fetch-Mode",
+								"value": "navigate"
+							},
+							{
+								"key": "Sec-Fetch-Site",
+								"value": "none"
+							},
+							{
+								"key": "Sec-Fetch-User",
+								"value": "?1"
+							},
+							{
+								"key": "Upgrade-Insecure-Requests",
+								"value": "1"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Mobile Safari/537.36"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\"Chromium\";v=\"122\", \"Not(A:Brand\";v=\"24\", \"Google Chrome\";v=\"122\""
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?1"
+							},
+							{
+								"key": "sec-ch-ua-platform",
+								"value": "\"Android\""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"state\":\"done\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/todos/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"todos",
+								"1"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "x-frame-options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "x-xss-protection",
+							"value": "0"
+						},
+						{
+							"key": "x-content-type-options",
+							"value": "nosniff"
+						},
+						{
+							"key": "x-permitted-cross-domain-policies",
+							"value": "none"
+						},
+						{
+							"key": "referrer-policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "etag",
+							"value": "W/\"fd2a6680e6a17a2e4ff0353046d52468\""
+						},
+						{
+							"key": "cache-control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "x-request-id",
+							"value": "fc47ebcf-fb56-45cf-b221-08e77edde724"
+						},
+						{
+							"key": "x-runtime",
+							"value": "0.035988"
+						},
+						{
+							"key": "server-timing",
+							"value": "start_processing.action_controller;dur=0.01, sql.active_record;dur=0.13, instantiation.active_record;dur=0.04, process_action.action_controller;dur=2.87"
+						},
+						{
+							"key": "Content-Length",
+							"value": "174"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"state\": \"done\",\n    \"id\": 1,\n    \"created_at\": \"2024-03-10T09:51:39.728Z\",\n    \"updated_at\": \"2024-03-10T15:03:38.568Z\",\n    \"name\": \"Go grocery shopping\",\n    \"description\": \"Buy fruits and vegetables\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Delete todo",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en;q=0.9,en-US;q=0.8,hi;q=0.7"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Cookie",
+						"value": "csrftoken=kPsZQ5SfZGHIcUH8xEUe2x5bEbsGOi8P; _blog_session=x3kXRHKBzDEPWqh3hbm2FcPofKFchVrV5NPtjZlLiCWMfxLD2ogs91fwVPmnYZNlIn5JM5mRKYkvLjAtJLyFcK6m28im%2BNC6zgJNpEJhGnoV9Fuzp93Yx%2BgWX7mHauY%2Ftz3zQ7z%2Bboa0LIbXSZI%2FClGRPxMLoxeHAiC%2B9Q7dztXauhIqB1EA0%2B6Uwmw2Gs%2FW1FfbpQi8aO0vAsx%2BlLXUazBfVrnoSkjrjWCUIJfobPUDfZoFzOgX6WQ2cPHddxbMTt8S5C7%2BttuiJwkH8q6OBTNTy7TM--JOsbG7AVNbSMnu9p--CAAB8yOJCxgsTm%2FHJG65TA%3D%3D"
+					},
+					{
+						"key": "DNT",
+						"value": "1"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "document"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "navigate"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "none"
+					},
+					{
+						"key": "Sec-Fetch-User",
+						"value": "?1"
+					},
+					{
+						"key": "Upgrade-Insecure-Requests",
+						"value": "1"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Mobile Safari/537.36"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Chromium\";v=\"122\", \"Not(A:Brand\";v=\"24\", \"Google Chrome\";v=\"122\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?1"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Android\""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"state\":\"done\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/todos/8",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"todos",
+						"8"
+					]
+				},
+				"description": "Get Created "
+			},
+			"response": []
+		},
+		{
+			"name": "Get inprgoress todos",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en;q=0.9,en-US;q=0.8,hi;q=0.7"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Cookie",
+						"value": "csrftoken=kPsZQ5SfZGHIcUH8xEUe2x5bEbsGOi8P; _blog_session=x3kXRHKBzDEPWqh3hbm2FcPofKFchVrV5NPtjZlLiCWMfxLD2ogs91fwVPmnYZNlIn5JM5mRKYkvLjAtJLyFcK6m28im%2BNC6zgJNpEJhGnoV9Fuzp93Yx%2BgWX7mHauY%2Ftz3zQ7z%2Bboa0LIbXSZI%2FClGRPxMLoxeHAiC%2B9Q7dztXauhIqB1EA0%2B6Uwmw2Gs%2FW1FfbpQi8aO0vAsx%2BlLXUazBfVrnoSkjrjWCUIJfobPUDfZoFzOgX6WQ2cPHddxbMTt8S5C7%2BttuiJwkH8q6OBTNTy7TM--JOsbG7AVNbSMnu9p--CAAB8yOJCxgsTm%2FHJG65TA%3D%3D"
+					},
+					{
+						"key": "DNT",
+						"value": "1"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "document"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "navigate"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "none"
+					},
+					{
+						"key": "Sec-Fetch-User",
+						"value": "?1"
+					},
+					{
+						"key": "Upgrade-Insecure-Requests",
+						"value": "1"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Mobile Safari/537.36"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Chromium\";v=\"122\", \"Not(A:Brand\";v=\"24\", \"Google Chrome\";v=\"122\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?1"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Android\""
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/todos/inprogress",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"todos",
+						"inprogress"
+					]
+				},
+				"description": "Get Created "
+			},
+			"response": [
+				{
+					"name": "Get inprgoress todos",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "en-GB,en;q=0.9,en-US;q=0.8,hi;q=0.7"
+							},
+							{
+								"key": "Cache-Control",
+								"value": "no-cache"
+							},
+							{
+								"key": "Connection",
+								"value": "keep-alive"
+							},
+							{
+								"key": "Cookie",
+								"value": "csrftoken=kPsZQ5SfZGHIcUH8xEUe2x5bEbsGOi8P; _blog_session=x3kXRHKBzDEPWqh3hbm2FcPofKFchVrV5NPtjZlLiCWMfxLD2ogs91fwVPmnYZNlIn5JM5mRKYkvLjAtJLyFcK6m28im%2BNC6zgJNpEJhGnoV9Fuzp93Yx%2BgWX7mHauY%2Ftz3zQ7z%2Bboa0LIbXSZI%2FClGRPxMLoxeHAiC%2B9Q7dztXauhIqB1EA0%2B6Uwmw2Gs%2FW1FfbpQi8aO0vAsx%2BlLXUazBfVrnoSkjrjWCUIJfobPUDfZoFzOgX6WQ2cPHddxbMTt8S5C7%2BttuiJwkH8q6OBTNTy7TM--JOsbG7AVNbSMnu9p--CAAB8yOJCxgsTm%2FHJG65TA%3D%3D"
+							},
+							{
+								"key": "DNT",
+								"value": "1"
+							},
+							{
+								"key": "Pragma",
+								"value": "no-cache"
+							},
+							{
+								"key": "Sec-Fetch-Dest",
+								"value": "document"
+							},
+							{
+								"key": "Sec-Fetch-Mode",
+								"value": "navigate"
+							},
+							{
+								"key": "Sec-Fetch-Site",
+								"value": "none"
+							},
+							{
+								"key": "Sec-Fetch-User",
+								"value": "?1"
+							},
+							{
+								"key": "Upgrade-Insecure-Requests",
+								"value": "1"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Mobile Safari/537.36"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\"Chromium\";v=\"122\", \"Not(A:Brand\";v=\"24\", \"Google Chrome\";v=\"122\""
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?1"
+							},
+							{
+								"key": "sec-ch-ua-platform",
+								"value": "\"Android\""
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/todos/inprogress",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"todos",
+								"inprogress"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "x-frame-options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "x-xss-protection",
+							"value": "0"
+						},
+						{
+							"key": "x-content-type-options",
+							"value": "nosniff"
+						},
+						{
+							"key": "x-permitted-cross-domain-policies",
+							"value": "none"
+						},
+						{
+							"key": "referrer-policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "etag",
+							"value": "W/\"9dabeb7eacc5f1794c15a8a7be2eac46\""
+						},
+						{
+							"key": "cache-control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "x-request-id",
+							"value": "6b1f2bc4-8e39-40d8-b488-76f579002f78"
+						},
+						{
+							"key": "x-runtime",
+							"value": "0.037108"
+						},
+						{
+							"key": "server-timing",
+							"value": "start_processing.action_controller;dur=0.03, sql.active_record;dur=0.19, instantiation.active_record;dur=0.09, process_action.action_controller;dur=3.19"
+						},
+						{
+							"key": "Content-Length",
+							"value": "195"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 4,\n        \"created_at\": \"2024-03-10T15:00:57.241Z\",\n        \"updated_at\": \"2024-03-10T15:00:57.241Z\",\n        \"name\": \"Coding this project\",\n        \"description\": \"RoR API ONLY project\",\n        \"state\": \"in_progress\",\n        \"image_url\": null\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Post todos",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en;q=0.9,en-US;q=0.8,hi;q=0.7"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Cookie",
+						"value": "csrftoken=kPsZQ5SfZGHIcUH8xEUe2x5bEbsGOi8P; _blog_session=x3kXRHKBzDEPWqh3hbm2FcPofKFchVrV5NPtjZlLiCWMfxLD2ogs91fwVPmnYZNlIn5JM5mRKYkvLjAtJLyFcK6m28im%2BNC6zgJNpEJhGnoV9Fuzp93Yx%2BgWX7mHauY%2Ftz3zQ7z%2Bboa0LIbXSZI%2FClGRPxMLoxeHAiC%2B9Q7dztXauhIqB1EA0%2B6Uwmw2Gs%2FW1FfbpQi8aO0vAsx%2BlLXUazBfVrnoSkjrjWCUIJfobPUDfZoFzOgX6WQ2cPHddxbMTt8S5C7%2BttuiJwkH8q6OBTNTy7TM--JOsbG7AVNbSMnu9p--CAAB8yOJCxgsTm%2FHJG65TA%3D%3D"
+					},
+					{
+						"key": "DNT",
+						"value": "1"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "document"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "navigate"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "none"
+					},
+					{
+						"key": "Sec-Fetch-User",
+						"value": "?1"
+					},
+					{
+						"key": "Upgrade-Insecure-Requests",
+						"value": "1"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Mobile Safari/537.36"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Chromium\";v=\"122\", \"Not(A:Brand\";v=\"24\", \"Google Chrome\";v=\"122\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?1"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Android\""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "todo[name]",
+							"value": "Image upload done",
+							"type": "text"
+						},
+						{
+							"key": "todo[description]",
+							"value": "Image upload test for RoR API Only",
+							"type": "text"
+						},
+						{
+							"key": "todo[state]",
+							"value": "done",
+							"type": "text"
+						},
+						{
+							"key": "todo[image]",
+							"type": "file",
+							"src": "/C:/Users/TEJAS/Downloads/berserk.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/todos/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"todos",
+						""
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "\"Image upload test\"",
+							"disabled": true
+						},
+						{
+							"key": "description",
+							"value": "\"RoR API ONLY project going strong\"",
+							"disabled": true
+						},
+						{
+							"key": "state",
+							"value": "\"done\"",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
